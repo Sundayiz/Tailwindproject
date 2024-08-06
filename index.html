@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <header class="bg-current shadow-md">
+      <div class="container mx-auto p-4 flex justify-between items-center">
+        <h1 class="text-3xl font-bold text-white">IzuobaSunday</h1>
+
+        <button id="navbar-toggle" class="block md:hidden text-white">
+          <i class="fa fa-bars fa-2x"></i>
+        </button>
+
+        <nav id="navbar-menu" class="hidden md:flex">
+          <ul class="flex space-x-4">
+            <li>
+              <a href="#" class="text-white hover:text-blue-500">Home</a>
+            </li>
+            <li>
+              <a href="#" class="text-white hover:text-blue-500">Projects</a>
+            </li>
+            <li>
+              <a href="#" class="text-white hover:text-blue-500">Contact</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <section
+      class="relative bg-cover bg-center h-screen"
+      style="
+        background-image: url('/TailwindCSS/public/image_1714080205555.jpg');
+      "
+    >
+      <div class="absolute inset-0 bg-black opacity-50"></div>
+      <div
+        class="relative container mx-auto h-full flex flex-col justify-center items-center text-center"
+      >
+        <h2 class="text-white text-4xl sm:text-6xl font-bold mb-4">
+          Hello, I'm [Sunday Izuoba]
+        </h2>
+        <p class="text-white text-lg sm:text-xl">
+          A Web Developer passionate about building beautiful web experiences
+        </p>
+      </div>
+    </section>
+
+    <section class="py-12 bg-gray-200">
+      <div class="container mx-auto">
+        <h3 class="text-3xl font-bold text-center mb-8">Web Development</h3>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div class="bg-white p-6 shadow-lg rounded-lg">
+            <h4 class="text-xl font-semibold mb-2">Javascript</h4>
+            <p class="text-gray-700">
+              This is used for writing code for whatever projecct your working
+              on
+            </p>
+          </div>
+          <div class="bg-white p-6 shadow-lg rounded-lg">
+            <h4 class="text-xl font-semibold mb-2">CSS</h4>
+            <p class="text-gray-700">
+              This is used for designing your html to make look good
+            </p>
+          </div>
+          <div class="bg-white p-6 shadow-lg rounded-lg">
+            <h4 class="text-xl font-semibold mb-2">HTML</h4>
+            <p class="text-gray-700">
+              It is used for structuring your web page
+            </p>
+          </div>
+          <div class="bg-white p-6 shadow-lg rounded-lg">
+            <h4 class="text-xl font-semibold mb-2">Bootstrap</h4>
+            <p class="text-gray-700">
+              This is a css framework, it is a prewritten css class that can be
+              applied directly to your html project
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-12">
+      <div class="container mx-auto">
+        <h3 class="text-3xl font-bold text-center mb-8">My Blog</h3>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div class="bg-white p-6 shadow-lg rounded-lg">
+            <img
+              src="/TailwindCSS/public/image_1714400152294.jpg"
+              alt="Project 1"
+              class="rounded mb-4"
+            />
+            <h4 class="text-xl font-semibold mb-2">Project 1</h4>
+            <p class="text-gray-700">Description of project 1.</p>
+          </div>
+          <div class="bg-white p-6 shadow-lg rounded-lg">
+            <img
+              src="/TailwindCSS/public/image_1714400152294.jpg"
+              alt="Project 2"
+              class="rounded mb-4"
+            />
+            <h4 class="text-xl font-semibold mb-2">Project 2</h4>
+            <p class="text-gray-700">Description of project 2.</p>
+          </div>
+          <div class="bg-white p-6 shadow-lg rounded-lg">
+            <img
+              src="/TailwindCSS/public/image_1714400152294.jpg"
+              alt="Project 3"
+              class="rounded mb-4"
+            />
+            <h4 class="text-xl font-semibold mb-2">Project 3</h4>
+            <p class="text-gray-700">Description of project 3.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-12 bg-gray-200">
+      <div class="container mx-auto">
+        <h3 class="text-3xl font-bold text-center mb-8">Contact Me</h3>
+        <form class="max-w-lg mx-auto bg-white p-6 shadow-lg rounded-lg">
+          <div class="mb-4">
+            <label for="name" class="block text-gray-700 font-semibold"
+              >Name</label
+            >
+            <input
+              type="text"
+              id="name"
+              class="w-full p-3 border border-gray-300 rounded mt-2"
+              placeholder="Your Name"
+            />
+          </div>
+          <div class="mb-4">
+            <label for="email" class="block text-gray-700 font-semibold"
+              >Email</label
+            >
+            <input
+              type="email"
+              id="email"
+              class="w-full p-3 border border-gray-300 rounded mt-2"
+              placeholder="Your Email"
+            />
+          </div>
+          <div class="mb-4">
+            <label for="message" class="block text-gray-700 font-semibold"
+              >Message</label
+            >
+            <textarea
+              id="message"
+              class="w-full p-3 border border-gray-300 rounded mt-2"
+              rows="5"
+              placeholder="Your Message"
+            ></textarea>
+          </div>
+          <button
+            type="submit"
+            class="w-full bg-blue-500 text-white py-3 rounded hover:bg-blue-600"
+          >
+            Send Message
+          </button>
+        </form>
+      </div>
+    </section>
+
+    <footer class="bg-gray-800 text-white py-4">
+      <div class="container mx-auto flex justify-between items-center">
+        <p>&copy; 2024 IZUOBASUNDAY. All rights reserved.</p>
+        <div class="flex space-x-4">
+          <a href="#" class="hover:text-blue-500"
+            ><i class="fab fa-facebook-f"></i
+          ></a>
+          <a href="#" class="hover:text-blue-500"
+            ><i class="fab fa-twitter"></i
+          ></a>
+          <a href="#" class="hover:text-blue-500"
+            ><i class="fab fa-linkedin-in"></i
+          ></a>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      document
+        .getElementById("navbar-toggle")
+        .addEventListener("click", function () {
+          var menu = document.getElementById("navbar-menu");
+          menu.classList.toggle("hidden");
+        });
+    </script>
+  </body>
+</html>
